@@ -12,6 +12,14 @@ body {
     background-color: rgb(12, 9, 17);
 }
 
+li {
+    transition: all 0.30s;
+}
+
+.top li:hover {
+    font-size: 2rem;
+}
+
 .top {
     display: flex;
     list-style: none;
@@ -37,7 +45,7 @@ body {
 
 .top li:active {
     padding-bottom: 3rem;
-    border-bottom: 4px solid white;
+    opacity: 0.7;
 }
 
 .top li:visited {
@@ -86,11 +94,13 @@ h1 , .b{
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 40px;
-    margin-left: 200px;
-    margin-top: 200px;
+    margin: auto;
+    margin-top: 100px;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
+    padding-bottom: 50px;
 }

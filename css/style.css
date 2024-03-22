@@ -38,7 +38,7 @@ body {
 
 .top li:active {
     padding-bottom: 3rem;
-    border-bottom: 4px solid white;
+    opacity: 0.7;
 }
 
 .top li:visited {
@@ -51,10 +51,18 @@ body {
     font-size: 2rem;
 }
 
+li {
+    transition: all 0.30s;
+}
+
+.top li:hover {
+    font-size: 2rem;
+}
+
 .info {
     font-family: arial;
     color: rgb(196, 196, 196);
-    background-color: black;
+    background-color: rgb(10, 5, 22);
     width: 620px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -63,6 +71,11 @@ body {
     margin: auto;
     margin-top: 200px;
     border-radius: 20px;
+    transition: all 0.30s;
+}
+
+.info:hover {
+    transform: translateY(-20px);
 }
 
 .info p {
@@ -75,7 +88,7 @@ body {
     width: 620px;
     position: absolute;
     margin: auto;
-    filter: blur(15px);
+    filter: blur(120px);
     margin-top: -145px;
     left: 0;
     right: 0;
