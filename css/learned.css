@@ -46,8 +46,13 @@ li {
 
 .top a {
     text-decoration: none;
+    color: rgb(141, 138, 138);
+}
+
+.top a:hover {
     color: white;
 }
+
 
 .top li:hover {
     font-size: 2rem;
