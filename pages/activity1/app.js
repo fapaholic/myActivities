@@ -2,6 +2,7 @@ import { leftDiv } from "./info.js"
 import { rightDiv } from "./img.js"
 
 let container = document.getElementById("container")
+let x = document.getElementById("btn4")
 
 const myObj = {
     title1:   "Aoyama Yuga",
@@ -19,3 +20,9 @@ const {title1, title2, par1, par2, button1, button2, button3, button4, dogImage}
 
 container.append(leftDiv(title1,title2,par1,par2,button1,button2,button3,button4))
 container.append(rightDiv(dogImage))
+
+
+
+x.addEventListener("click", function(){ 
+    window.close();;
+});

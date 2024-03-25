@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -20,7 +22,15 @@ li {
     font-size: 2rem;
 }
 
+.space {
+
+    display: block;
+    height: 150px;
+    width: 100%;
+}
+
 .top {
+    position: fixed;
     display: flex;
     list-style: none;
     gap: 30px;
@@ -62,29 +72,27 @@ li {
 .shadow {
     z-index: -1;
     height: 210px;
-    width: 25%;
-    position: absolute;
+    width: 40%;
+    position: fixed;
     margin: auto;
-    filter: blur(15px);
-    margin-top: -175px;
-    margin-left: -25px;
+    filter: blur(100px);
+    top: 200px;
+    left: 0;
+    right: 0;
     background-image: linear-gradient(to right, rgb(245, 7, 126), rgb(0, 162, 255));
 }
 
-.shadow:hover {
-    filter: blur(25px);
-}
 
 h1 , .b{
     background: linear-gradient(to right, #f700ff 0%, #0099ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 5px;
 }
 
 .card {
     text-align: justify;
     width: 25%;
+    height: 120px;
     color: white;
     border: 1px solid rgb(63, 62, 62);
     border-radius: 10px;
@@ -94,13 +102,34 @@ h1 , .b{
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 40px;
-    margin: auto;
-    margin-top: 100px;
+    overflow: hidden;
+    margin-right: 1px;
+    margin-top: 10px;
+    transition: height 0.5s;
+    
 }
 
+.card h1 {
+    font-family:"Lilita One";
+    text-align: center;
+    cursor: default ;
+}
+
+.card:hover {
+    height: 250px;
+}
+
+p {
+    padding-top: 50px;
+    display: block;
+    cursor:d efault ;
+}
+
+
+ 
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    justify-content: space-evenly;
     padding-bottom: 50px;
 }

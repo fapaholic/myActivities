@@ -55,13 +55,13 @@ img:hover {
 }
 
 h1 {
+    cursor: default ;
     transition: all 0.8s;
     display: block;
 }
 
 h1:hover {
-    
-    margin-left: 30%;
+    margin: auto;
     font-size: 3rem;
 }
 
@@ -82,8 +82,11 @@ h1:hover {
 }
 
 p{
+    margin-top: 10px;
     font-family: arial;
+    text-align: justify;
     margin-block-end: 20px;
+    cursor: default ;
 }
 
 .rightDiv{
