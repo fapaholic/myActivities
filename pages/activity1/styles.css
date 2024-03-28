@@ -18,21 +18,45 @@ body {
 }
 
 button{
-    background-color: green;
-    color: white;
+    background-color: rgba(0, 128, 0, 0);
+    color: rgb(240, 202, 230);
     height: 30px;
     width: 20%;
-    border: none;
-    outline: none;
+    border: solid 1px rgb(87, 88, 97);
     margin-right: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.486);
     transition: all 0.30s;
+    overflow: hidden;
+    position: relative;
 }
 
 button:hover {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.486);
     cursor: pointer;
+    color: white;
+}
+
+span {
+    background: linear-gradient(to right, #f700ff 0%, #0099ff 100%);
+    width: 0;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(15px);
+}
+
+button {
+    z-index: 1;
+}
+
+button:hover span{
+    width: 100%;
 }
 
 button:active {
@@ -143,12 +167,6 @@ li {
 .top li:active {
     padding-bottom: 3rem;
     opacity: 0.7;
-}
-
-.top li:visited {
-    font-size: 2rem;
-    padding-bottom: 3rem;
-    border-bottom: 4px solid white;
 }
 
 .c {
