@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,21 +18,45 @@ body {
 }
 
 button{
-    background-color: green;
-    color: white;
+    background-color: rgba(0, 128, 0, 0);
+    color: rgb(240, 202, 230);
     height: 30px;
     width: 20%;
-    border: none;
-    outline: none;
+    border: solid 1px rgb(87, 88, 97);
     margin-right: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.486);
     transition: all 0.30s;
+    overflow: hidden;
+    position: relative;
 }
 
 button:hover {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.486);
     cursor: pointer;
+    color: white;
+}
+
+span {
+    background: linear-gradient(to right, #f700ff 0%, #0099ff 100%);
+    width: 0;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(15px);
+}
+
+button {
+    z-index: 1;
+}
+
+button:hover span{
+    width: 100%;
 }
 
 button:active {
@@ -55,13 +79,13 @@ img:hover {
 }
 
 h1 {
+    cursor: default ;
     transition: all 0.8s;
     display: block;
 }
 
 h1:hover {
-    
-    margin-left: 30%;
+    margin: auto;
     font-size: 3rem;
 }
 
@@ -82,8 +106,11 @@ h1:hover {
 }
 
 p{
+    margin-top: 10px;
     font-family: arial;
+    text-align: justify;
     margin-block-end: 20px;
+    cursor: default ;
 }
 
 .rightDiv{
@@ -125,6 +152,10 @@ p{
     color: rgb(141, 138, 138);
 }
 
+.top a:hover {
+    color: white;
+}
+
 li {
     transition: all 0.30s;
 }
@@ -138,12 +169,6 @@ li {
     opacity: 0.7;
 }
 
-.top li:visited {
-    font-size: 2rem;
-    padding-bottom: 3rem;
-    border-bottom: 4px solid white;
-}
-
 .c {
     font-size: 2rem;
     font-weight: bolder;
@@ -155,4 +180,225 @@ li {
     -webkit-text-fill-color: transparent;
     margin-bottom: 5px;
 }
+ */
 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(12, 9, 17);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container{
+    max-width: 90%; /* Adjusted max-width for better responsiveness */
+    display: flex;
+    margin: 0 auto;
+    font-family: arial;
+    filter: none;
+    flex-wrap: wrap; /* Added to allow wrapping on smaller screens */
+}
+
+button{
+    background-color: rgba(0, 128, 0, 0);
+    color: rgb(240, 202, 230);
+    height: 3vw; /* Adjusted height for responsiveness */
+    width: 9vw; /* Adjusted width for responsiveness */
+    border: solid 1px rgb(87, 88, 97);
+    margin-right: 2%; /* Adjusted margin for responsiveness */
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.486); /* Adjusted box-shadow for responsiveness */
+    transition: all 0.30s;
+    overflow: hidden;
+    position: relative;
+}
+
+button:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.486); /* Adjusted box-shadow for responsiveness */
+    cursor: pointer;
+    color: white;
+}
+
+button:active {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.486); /* Adjusted box-shadow for responsiveness */
+    cursor: pointer;
+    color: white;
+}
+
+span {
+    background: linear-gradient(to right, #f700ff 0%, #0099ff 100%);
+    width: 0;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(15px);
+}
+
+button {
+    z-index: 1;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:active {
+    box-shadow: 2% 2% 2% rgba(0, 0, 0, 0.486); /* Adjusted box-shadow for responsiveness */
+    opacity: 0.9;
+}
+
+img{
+    position: relative;
+    margin-top: 15vw; /* Adjusted margin for responsiveness */
+    width: 40vw; /* Adjusted width for responsiveness */
+    min-width: 300px;
+    height: auto;
+    border-radius: 2%;
+    box-shadow: 0 2% 4% rgba(0, 0, 0, 0.486); /* Adjusted box-shadow for responsiveness */
+    transition: all 0.30s;
+}
+
+img:hover {
+    box-shadow: 0 4% 8% rgba(0, 0, 0, 0.486); /* Adjusted box-shadow for responsiveness */
+}
+
+h1 {
+    cursor: default ;
+    transition: all 0.8s;
+    display: block;
+}
+
+h1:hover {
+    margin: auto;
+    font-size: 3rem;
+}
+
+.leftDiv{
+    margin-top: 15vw; /* Adjusted margin for responsiveness */
+    padding: 2vw; /* Adjusted padding for responsiveness */
+    width: 50%; /* Adjusted width for responsiveness */
+    background-color: rgb(47, 43, 80);
+    border: 1px solid;
+    border-radius: 10px;
+    transition: all 0.30s;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0); /* Adjusted box-shadow for responsiveness */
+    color: azure;
+    margin-right: 2vw ;
+}
+
+.leftDiv:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.486); /* Adjusted box-shadow for responsiveness */
+}
+
+p{
+    margin-top: 2vw; /* Adjusted margin for responsiveness */
+    font-family: arial;
+    text-align: justify;
+    margin-block-end: 4vw; /* Adjusted margin for responsiveness */
+    cursor: default ;
+}
+
+.top {
+    display: flex;
+    list-style: none;
+    gap: 3vw; /* Adjusted gap for responsiveness */
+    padding: 2vw; /* Adjusted padding for responsiveness */
+    width: 100%;
+    height: auto; /* Adjusted height for responsiveness */
+    justify-content: center;
+    font-family: arial;
+    font-weight: bold;
+    transition: all 0.30s;
+}
+
+.bg {
+    transition: all 0.30s;
+    z-index: -1;
+    height: 40vw; /* Adjusted height for responsiveness */
+    width: 90vw; /* Adjusted width for responsiveness */
+    position: absolute;
+    margin: auto;
+    filter: blur(15vw); /* Adjusted blur for responsiveness */
+    margin-top: 15vw; /* Adjusted margin for responsiveness */
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgb(0, 162, 255), rgb(245, 7, 126));
+}
+
+.top a {
+    text-decoration: none;
+    color: rgb(141, 138, 138);
+}
+
+.top a:hover {
+    color: white;
+}
+
+li {
+    transition: all 0.30s;
+}
+
+.top li:hover {
+    font-size: 2rem;
+}
+
+.top li:active {
+    padding-bottom: 3rem;
+    opacity: 0.7;
+}
+
+.c {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.c{
+    background: linear-gradient(to right, #f700ff 0%, #0099ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1vw; /* Adjusted margin for responsiveness */
+}
+
+@media screen and (max-width: 768px) {
+    button {
+        width: 99%; /* Adjusted width for responsiveness on smaller screens */
+        margin: 5% auto; /* Adjusted margin for responsiveness on smaller screens */
+        height: 30px;
+    }
+
+    img {
+
+        width: 99%;
+        margin-top: 10vw; /* Adjusted margin for responsiveness on smaller screens */
+    }
+
+    .leftDiv {
+        width: 99%;
+        margin-top: 10vw; /* Adjusted margin for responsiveness on smaller screens */
+    }
+
+    p {
+        margin-top: 2vw; /* Adjusted margin for responsiveness on smaller screens */
+        margin-bottom: 2vw; /* Adjusted margin for responsiveness on smaller screens */
+    }
+
+    .bg {
+        height: 30vw; /* Adjusted height for responsiveness on smaller screens */
+        width: 80vw; /* Adjusted width for responsiveness on smaller screens */
+        margin-top: 10vw; /* Adjusted margin for responsiveness on smaller screens */
+        filter: blur(10vw); /* Adjusted blur for responsiveness on smaller screens */
+    }
+}
