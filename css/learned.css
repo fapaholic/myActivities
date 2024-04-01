@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /* @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-=======
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
->>>>>>> a5c84e1d952b89296eb63c05bfa942557ed3601c
 
 * {
     padding: 0;
@@ -54,7 +50,6 @@ li {
 }
 
 .top a:hover {
-<<<<<<< HEAD
     color: white;
 }
 
@@ -195,11 +190,8 @@ li {
 }
 
 .top a:hover {
-=======
->>>>>>> a5c84e1d952b89296eb63c05bfa942557ed3601c
     color: white;
 }
-
 
 .top li:hover {
     font-size: 2rem;
@@ -224,31 +216,18 @@ li {
 .shadow {
     z-index: -1;
     height: 210px;
-<<<<<<< HEAD
     width: 40vw; /* Changed to viewport units for better responsiveness */
     position: fixed;
     margin: auto;
     filter: blur(100px);
     top: 20vw; /* Changed to viewport units for better responsiveness */
-=======
-    width: 40%;
-    position: fixed;
-    margin: auto;
-    filter: blur(100px);
-    top: 200px;
->>>>>>> a5c84e1d952b89296eb63c05bfa942557ed3601c
     left: 0;
     right: 0;
     background-image: linear-gradient(to right, rgb(245, 7, 126), rgb(0, 162, 255));
 }
 
-<<<<<<< HEAD
 h1,
 .b {
-=======
-
-h1 , .b{
->>>>>>> a5c84e1d952b89296eb63c05bfa942557ed3601c
     background: linear-gradient(to right, #f700ff 0%, #0099ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -256,19 +235,13 @@ h1 , .b{
 
 .card {
     text-align: justify;
-<<<<<<< HEAD
     width: 25vw; /* Changed to viewport units for better responsiveness */
     height: 11vw; /* Changed to viewport units for better responsiveness */
-=======
-    width: 25%;
-    height: 120px;
->>>>>>> a5c84e1d952b89296eb63c05bfa942557ed3601c
     color: white;
     border: 1px solid rgb(63, 62, 62);
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
     font-family: arial;
-<<<<<<< HEAD
     padding: 4vw; /* Changed to viewport units for better responsiveness */
     overflow: hidden;
     margin: 1vw; /* Changed to viewport units for better responsiveness */
@@ -289,42 +262,12 @@ p {
     padding-top: 6vw; /* Changed to viewport units for better responsiveness */
     display: block;
     cursor: default;
-=======
-    padding-top: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 40px;
-    overflow: hidden;
-    margin-right: 1px;
-    margin-top: 10px;
-    transition: height 0.5s;
-    
->>>>>>> a5c84e1d952b89296eb63c05bfa942557ed3601c
 }
 
-.card h1 {
-    font-family:"Lilita One";
-    text-align: center;
-    cursor: default ;
-}
-
-.card:hover {
-    height: 250px;
-}
-
-p {
-    padding-top: 50px;
-    display: block;
-    cursor: default;
-}
-
-
- 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-<<<<<<< HEAD
     padding-bottom: 10vw; /* Changed to viewport units for better responsiveness */
 }
 
@@ -355,7 +298,3 @@ p {
         padding-bottom: 20vw;
     }
 }
-=======
-    padding-bottom: 50px;
-}
->>>>>>> a5c84e1d952b89296eb63c05bfa942557ed3601c
