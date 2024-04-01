@@ -1,0 +1,393 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.sec1con {
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+
+div {
+    padding-left: 100px;
+}
+
+img {
+    width: 500px;
+}
+
+p,
+h1 {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+body{
+    transition: all 0.15s;
+}
+
+.sec1 {
+    display: flex;
+    padding-top: 80px;
+    margin-bottom: 225px;
+    justify-content: space-evenly;
+    background-image: linear-gradient(black, lightgrey, white, white,white,white);
+}
+
+.sec2 {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin: auto;
+}
+
+
+button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    transition: box-shadow 0.15s;
+}
+
+button:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    transition: all 0.15s;
+    opacity: 0.8;
+}
+
+.hop {
+    width: 300px;
+    height: 300px;
+
+}
+
+.cardsec2 {
+    text-align: justify;
+    margin-right: 20px;
+    padding-right: 300px;
+    padding-left: 0;
+    margin-bottom: 50px;
+    width: 200px;
+    min-width: 200px;
+    min-height: fit-content;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.7);
+    opacity: 0.5;
+    transition: all 0.15s;
+}
+
+.cardsec2:hover {
+    opacity: 1;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cardsec2 button {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.cardsec2 button:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.cardsec2 button:active {
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hud {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 280px;
+
+}
+
+.but {
+    margin-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100px;
+}
+
+.sec3 h1 {
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+    margin: auto;
+}
+
+.sec3 {
+    margin-bottom: 30px;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    font-family: arial;
+    font-weight: bold;
+    height: 100px;
+}
+
+.top a {
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+}
+
+.top a:hover {
+    color: rgb(110, 110, 110);
+}
+
+.top li:hover {
+    font-size: 2rem; /* Adjusted font size for hover effect */
+}
+
+.top li:active {
+    padding-bottom: 2rem;
+    opacity: 0.7;
+}
+
+.top li:visited {
+    font-size: 2rem; /* Adjusted font size for visited links */
+    padding-bottom: 2rem;
+    border-bottom: 4px solid white;
+}
+
+.d {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+li {
+    transition: all 0.30s;
+}
+
+.sec1con {
+    text-align: justify;
+    min-width: 400px;
+    padding-top: 25vw; /* Use viewport units for padding */
+    margin-bottom: 5vw; /* Use viewport units for margin */
+}
+
+div {
+    padding-left: 5vw; /* Use viewport units for padding */
+}
+
+.sec1 img {
+    padding-top: 5vw;
+    max-width: 100%; 
+    min-width: 700px;
+    filter: drop-shadow(0 0 10px rgba(107, 107, 107, 0.7));
+    transition: filter 0.30s;
+}
+
+.sec1 img:hover {
+    filter: drop-shadow(0 0 30px rgba(77, 77, 77, 0.9));
+}
+
+.sec1 a {
+    text-decoration: none;
+    color: white;
+}
+
+p,
+h1 {
+    width: 80%; /* Use percentage for width */
+    margin-bottom: 2vw; /* Use viewport units for margin */
+}
+
+body {
+    transition: all 0.15s;
+}
+
+.sec1 {
+    display: flex; 
+    margin-bottom: 15vw; /* Use viewport units for margin */
+    justify-content: space-evenly;
+    background-image: linear-gradient(black, lightgrey, white, white, white, white);
+}
+
+.sec2 {
+    display: flex;
+    justify-content: space-around;
+    max-width: 90%; /* Use percentage for max-width */
+    margin: auto;
+}
+
+button {
+    padding: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.7); /* Use viewport units for box-shadow */
+    transition: box-shadow 0.15s;
+}
+
+button:hover {
+    box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5); /* Use viewport units for box-shadow */
+}
+
+button:active {
+    transition: all 0.15s;
+    box-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
+}
+
+.hop {
+    max-width: 50%; /* Use percentage for max-width */
+    height: auto;
+}
+
+.cardsec2 {
+    text-align: justify;
+    margin-right: 5vw; 
+    margin-bottom: 5vw;
+    width: 40%; 
+    min-width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 2vw; /* Use viewport units for padding */
+    padding-left: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Use viewport units for box-shadow */
+    opacity: 0.5;
+    transition: all 0.15s;
+}
+
+.cardsec2:hover {
+    opacity: 1;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Use viewport units for box-shadow */
+}
+
+.cardsec2 button {
+    padding: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2vw 2vw 4vw rgba(0, 0, 0, 0.7); /* Use viewport units for box-shadow */
+    transition: box-shadow 0.15s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8); /* Use viewport units for box-shadow */
+}
+
+.cardsec2 button:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7); /* Use viewport units for box-shadow */
+}
+
+.cardsec2 button:active {
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Use viewport units for box-shadow */
+}
+
+.hud {
+    margin-top: 2vw;
+    margin-left: 2vw; /* Use viewport units for margin */
+    margin-right: 2vw; /* Use viewport units for margin */
+    max-width: 95%; /* Use percentage for max-width */
+}
+
+.cardsec2 img {
+    min-width: 100%;
+}
+
+.but {
+    margin-left: 4vh;
+    padding: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.7); /* Use viewport units for box-shadow */
+    transition: box-shadow 0.15s; /* Use percentage for max-width */
+}
+
+.sec3 h1 {
+    text-align: center;
+    margin-top: 5vw; /* Use viewport units for margin */
+}
+
+.sec3 { 
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 3vw; /* Use viewport units for margin */
+}
+
+.top a{
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .sec1con {
+        padding-top: 25vw;
+        margin-bottom: 3vw;
+    }
+
+    .sec1 img{
+        display: none;
+    }
+
+    div {
+        padding-left: 3vw;
+    }
+
+    .sec1 {
+        height: 100vh;
+        padding-top: 3vw;
+        margin-bottom: 10vw;
+    }
+
+    .sec1con {
+        padding-top: 45vw;
+    }
+
+    .sec2 {
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+
+    .cardsec2 {
+        width: 80%;
+    }
+
+    .hud {
+        margin-right: 0;
+        width: 94%;
+    }
+
+    .hud,
+    .but {
+        margin-left: 10px;
+        max-width: 99%;
+        
+    }
+}
