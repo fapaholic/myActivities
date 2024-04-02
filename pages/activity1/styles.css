@@ -194,6 +194,7 @@ body {
 
 .wrap {
     display: flex;
+    margin: auto;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -211,7 +212,7 @@ button{
     background-color: rgba(0, 128, 0, 0);
     color: rgb(240, 202, 230);
     height: 3vw; /* Adjusted height for responsiveness */
-    width: 9vw; /* Adjusted width for responsiveness */
+    width: 8vw; /* Adjusted width for responsiveness */
     border: solid 1px rgb(87, 88, 97);
     margin-right: 2%; /* Adjusted margin for responsiveness */
     border-radius: 20px;
@@ -262,7 +263,7 @@ button:active {
 
 img{
     position: relative;
-    margin-top: 15vw; /* Adjusted margin for responsiveness */
+    margin-top: 10vw; /* Adjusted margin for responsiveness */
     width: 40vw; /* Adjusted width for responsiveness */
     min-width: 300px;
     height: auto;
@@ -287,9 +288,9 @@ h1:hover {
 }
 
 .leftDiv{
-    margin-top: 15vw; /* Adjusted margin for responsiveness */
+    margin-top: 10vw; /* Adjusted margin for responsiveness */
     padding: 2vw; /* Adjusted padding for responsiveness */
-    width: 50%; /* Adjusted width for responsiveness */
+    width: 45%; /* Adjusted width for responsiveness */
     background-color: rgb(47, 43, 80);
     border: 1px solid;
     border-radius: 10px;

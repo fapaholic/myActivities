@@ -258,10 +258,19 @@ h1,
     height: 50vh;
 }
 
+.card:hover p {
+    display: block;
+}
+
 p {
     padding-top: 6vw; /* Changed to viewport units for better responsiveness */
     display: block;
+    display: none;
     cursor: default;
+}
+
+.card p {
+    display: none;
 }
 
 .container {
@@ -284,6 +293,10 @@ p {
         padding: 2vw;
     }
     
+    .card:hover p {
+        display: block;
+    }
+
     .card {
         width: 65%;
         height: 80px;
